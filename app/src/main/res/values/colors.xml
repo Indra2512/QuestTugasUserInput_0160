@@ -3,4 +3,5 @@
     <color name="purple_background">#1A0B2E</color>
     <color name="card_background">#FFFFFF</color>
     <color name="text_titel">#4A154B</color>
+    <color name="text_subtitle">#717171</color>
 </resources>
