@@ -4,4 +4,5 @@
     <color name="card_background">#FFFFFF</color>
     <color name="text_titel">#4A154B</color>
     <color name="text_subtitle">#717171</color>
+    <color name="black">#FF000000</color>
 </resources>
