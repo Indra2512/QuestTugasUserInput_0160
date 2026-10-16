@@ -3,5 +3,5 @@
     <string name="form_title">Form Biodata</string>
     <string name="form_subtitle">Silahkan isi biodata anda </string>
     <string name="hint_nama_depan">Nama Depan</string>
-
+    <string name="hint_nama_belakang">Nama Belakang</string>
 </resources>
