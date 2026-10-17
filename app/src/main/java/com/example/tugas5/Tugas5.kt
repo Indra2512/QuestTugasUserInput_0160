@@ -105,7 +105,8 @@ fun BiodataScreen(modifier: Modifier) {
                                 onValueChange = {namaDepan = it},
                                 label = { Text(stringResource(id = R.string.hint_nama_depan)) },
                                 modifier = Modifier.weight(1f),
-                                shape = RoundedCornerShape(12.dp)
+                                shape = RoundedCornerShape(12.dp),
+                                singleLine = true
                             )
                             OutlinedTextField(
                                 value = namaBelakang,
@@ -124,7 +125,8 @@ fun BiodataScreen(modifier: Modifier) {
                             onValueChange = { email = it },
                             label = { Text(stringResource(id = R.string.hint_email)) },
                             modifier = Modifier.fillMaxWidth(),
-                            shape = RoundedCornerShape(12.dp)
+                            shape = RoundedCornerShape(12.dp),
+                            singleLine = true
                         )
 
                         Spacer(modifier = Modifier.height(12.dp))
@@ -138,14 +140,16 @@ fun BiodataScreen(modifier: Modifier) {
                                 onValueChange = { tglLahir = it },
                                 label = { Text(stringResource(id = R.string.hint_tgl_lahir)) },
                                 modifier = Modifier.weight(1f),
-                                shape = RoundedCornerShape(12.dp)
+                                shape = RoundedCornerShape(12.dp),
+                                singleLine = true
                             )
                             OutlinedTextField(
                                 value = experience,
                                 onValueChange = { experience = it },
                                 label = { Text(stringResource(id = R.string.hint_experience)) },
                                 modifier = Modifier.weight(1f),
-                                shape = RoundedCornerShape(12.dp)
+                                shape = RoundedCornerShape(12.dp),
+                                singleLine = true
                             )
                         }
 
