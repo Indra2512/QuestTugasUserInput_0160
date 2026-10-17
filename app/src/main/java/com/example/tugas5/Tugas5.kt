@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Checkbox
@@ -184,6 +185,21 @@ fun BiodataScreen() {
                         }
 
                         Spacer(modifier = Modifier.height(24.dp))
+
+                        Button(
+                            onClick = {
+                                val selectedSkills = mutableListOf<String>()
+                                if (isAndroidChecked) selectedSkills.add(labelAndroid)
+                                if (isUiUxChecked) selectedSkills.add(labelUiUx)
+                                if (isWebChecked) selectedSkills.add(labelWeb)
+
+                                val skillText = if (selectedSkills.isNotEmpty()) {
+                                    selectedSkills.joinToString(", ")
+                                } else {
+                                    labelNone
+                                }
+                            }
+                        ) { }
                     }
             }
         }
