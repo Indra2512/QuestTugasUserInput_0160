@@ -24,4 +24,7 @@ fun BiodataScreen() {
     val coroutineScope = stringResource(id = R.string.skill_android)
     val context = LocalContext.current
 
+    val labelAndroid = stringResource(id = R.string.skill_android)
+
+
 }
