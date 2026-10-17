@@ -26,6 +26,6 @@ fun BiodataScreen() {
 
     val labelAndroid = stringResource(id = R.string.skill_android)
     val labelUiUx = stringResource(id = R.string.skill_ui_ux)
-
+    val labelWeb = stringResource(id = R.string.skill_web)
 
 }
