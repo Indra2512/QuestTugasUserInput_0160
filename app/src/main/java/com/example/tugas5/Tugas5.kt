@@ -1,5 +1,6 @@
 package com.example.tugas5
 
+import androidx.compose.foundation.Image
 import kotlinx.coroutines.launch
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -33,6 +34,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -66,6 +68,15 @@ fun BiodataScreen(modifier: Modifier) {
                 .fillMaxSize()
                 .padding(innerPadding)
             ) {
+
+            Image(
+                painter = painterResource(id = R.drawable.minecraft),
+                contentDescription = null,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(180.dp)
+            )
+
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
