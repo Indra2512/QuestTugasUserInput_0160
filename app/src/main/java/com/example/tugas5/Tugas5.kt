@@ -140,6 +140,17 @@ fun BiodataScreen() {
                                 shape = RoundedCornerShape(12.dp)
                             )
                         }
+
+                        Spacer(modifier = Modifier.height(16.dp))
+
+                        Text(
+                            text = stringResource(id = R.string.label_pilih_skill),
+                            fontSize = 14.sp,
+                            color = colorResource(id = R.color.black),
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(bottom = 4.dp)
+                        )
                     }
             }
         }
