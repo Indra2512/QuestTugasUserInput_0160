@@ -109,6 +109,14 @@ fun BiodataScreen() {
                         }
 
                         Spacer(modifier = Modifier.height(12.dp))
+
+                        OutlinedTextField(
+                            value = email,
+                            onValueChange = { email = it },
+                            label = { Text(stringResource(id = R.string.hint_email)) },
+                            modifier = Modifier.fillMaxHeight(),
+                            shape = RoundedCornerShape(12.dp)
+                        )
                     }
             }
         }
