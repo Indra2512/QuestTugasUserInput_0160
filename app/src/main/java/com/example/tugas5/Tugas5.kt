@@ -14,5 +14,6 @@ fun BiodataScreen() {
     var tglLahir by remember { mutableStateOf("") }
     var experience by remember { mutableStateOf("") }
     var isAndroidChecked by remember { mutableStateOf(false) }
+    var isUiUxChecked by remember { mutableStateOf(false) }
 
 }
