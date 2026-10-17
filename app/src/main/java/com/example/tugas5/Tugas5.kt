@@ -1,6 +1,7 @@
 package com.example.tugas5
 
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -64,7 +65,16 @@ fun BiodataScreen() {
                     containerColor = colorResource(id = R.color.card_background)
                 ),
                 elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
-            ) { }
+            ) {
+
+                    Column(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .padding(24.dp),
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+                }
+            }
         }
         )
     }
