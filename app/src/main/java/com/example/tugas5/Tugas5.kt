@@ -82,6 +82,12 @@ fun BiodataScreen() {
                             color = colorResource(id = R.color.text_titel),
                             style = MaterialTheme.typography.titleLarge
                         )
+                        Text(
+                            text = stringResource(id = R.string.form_subtitle),
+                            fontSize = 12.sp,
+                            color = colorResource(id = R.color.text_subtitle),
+                            modifier = Modifier.padding(bottom = 16.dp)
+                        )
                     }
             }
         }
