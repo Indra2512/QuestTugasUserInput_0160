@@ -69,7 +69,6 @@ fun BiodataScreen(modifier: Modifier) {
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .fillMaxHeight(0.78f)
                     .align(Alignment.BottomCenter),
                 shape = RoundedCornerShape(topStart = 32.dp, topEnd = 32.dp),
                 colors = CardDefaults.cardColors(
@@ -108,6 +107,14 @@ fun BiodataScreen(modifier: Modifier) {
                                 modifier = Modifier.weight(1f),
                                 shape = RoundedCornerShape(12.dp)
                             )
+                            OutlinedTextField(
+                                value = namaBelakang,
+                                onValueChange = { namaBelakang = it },
+                                label = { Text(stringResource(id = R.string.hint_nama_belakang)) },
+                                modifier = Modifier.weight(1f),
+                                shape = RoundedCornerShape(12.dp),
+                                singleLine = true
+                            )
                         }
 
                         Spacer(modifier = Modifier.height(12.dp))
@@ -116,7 +123,7 @@ fun BiodataScreen(modifier: Modifier) {
                             value = email,
                             onValueChange = { email = it },
                             label = { Text(stringResource(id = R.string.hint_email)) },
-                            modifier = Modifier.fillMaxHeight(),
+                            modifier = Modifier.fillMaxWidth(),
                             shape = RoundedCornerShape(12.dp)
                         )
 
