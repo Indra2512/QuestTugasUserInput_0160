@@ -9,3 +9,6 @@ import androidx.compose.runtime.setValue
 @Composable
 fun BiodataScreen() {
     var namaDepan by remember { mutableStateOf("") }
+    var namaBelakang by remember { mutableStateOf("") }
+
+}
