@@ -6,6 +6,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 
 @Composable
@@ -21,5 +22,6 @@ fun BiodataScreen() {
 
     val snackbarHostState = remember { SnackbarHostState() }
     val coroutineScope = stringResource(id = R.string.skill_android)
+    val context = LocalContext.current
 
 }
