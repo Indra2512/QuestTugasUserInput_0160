@@ -117,6 +117,15 @@ fun BiodataScreen() {
                             modifier = Modifier.fillMaxHeight(),
                             shape = RoundedCornerShape(12.dp)
                         )
+
+                        Spacer(modifier = Modifier.height(12.dp))
+
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.spacedBy(8.dp)
+                        ) {
+
+                        }
                     }
             }
         }
