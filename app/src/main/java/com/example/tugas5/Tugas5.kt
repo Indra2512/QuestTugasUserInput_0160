@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Checkbox
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
@@ -151,9 +152,40 @@ fun BiodataScreen() {
                                 .fillMaxWidth()
                                 .padding(bottom = 4.dp)
                         )
+
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Checkbox(
+                                    checked = isAndroidChecked,
+                                    onCheckedChange = { isAndroidChecked = it }
+                                )
+                                Text(text = labelAndroid, fontSize = 12.sp)
+                            }
+
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Checkbox(
+                                    checked = isUiUxChecked,
+                                    onCheckedChange = { isUiUxChecked = it }
+                                )
+                                Text(text = labelUiUx, fontSize = 12.sp)
+                            }
+
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Checkbox(
+                                    checked = isWebChecked,
+                                    onCheckedChange = { isWebChecked = it }
+                                )
+                                Text(text = labelWeb, fontSize = 12.sp)
+                            }
+                        }
+
+                        Spacer(modifier = Modifier.height(24.dp))
                     }
             }
         }
-        )
     }
 }
