@@ -1,5 +1,6 @@
 package com.example.tugas5
 
+import androidx.compose.material3.SnackbarHostState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -16,5 +17,7 @@ fun BiodataScreen() {
     var isAndroidChecked by remember { mutableStateOf(false) }
     var isUiUxChecked by remember { mutableStateOf(false) }
     var isWebChecked by remember { mutableStateOf(false) }
+
+    val snackbarHostState = remember { SnackbarHostState() }
 
 }
