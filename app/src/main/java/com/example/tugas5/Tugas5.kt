@@ -25,6 +25,7 @@ fun BiodataScreen() {
     val context = LocalContext.current
 
     val labelAndroid = stringResource(id = R.string.skill_android)
+    val labelUiUx = stringResource(id = R.string.skill_ui_ux)
 
 
 }
