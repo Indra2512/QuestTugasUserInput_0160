@@ -34,6 +34,7 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import java.net.IDN
 
 @Composable
 fun BiodataScreen() {
@@ -124,7 +125,20 @@ fun BiodataScreen() {
                             modifier = Modifier.fillMaxWidth(),
                             horizontalArrangement = Arrangement.spacedBy(8.dp)
                         ) {
-
+                            OutlinedTextField(
+                                value = tglLahir,
+                                onValueChange = { tglLahir = it },
+                                label = { Text(stringResource(id = R.string.hint_tgl_lahir)) },
+                                modifier = Modifier.weight(1f),
+                                shape = RoundedCornerShape(12.dp)
+                            )
+                            OutlinedTextField(
+                                value = experience,
+                                onValueChange = { experience = it },
+                                label = { Text(stringResource(id = R.string.hint_experience)) },
+                                modifier = Modifier.weight(1f),
+                                shape = RoundedCornerShape(12.dp)
+                            )
                         }
                     }
             }
